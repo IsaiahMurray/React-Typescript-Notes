@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import FetchChange from './components/Fetch-useEffect/DataFetching-Dynamic';
+import FetchClick from './components/Fetch-useEffect/DataFetching-Click';
+import FetchOne from './components/Fetch-useReducer/FetchOne';
+import FetchTwo from './components/Fetch-useReducer/FetchTwo';
+import CounterOne from './components/useReducer/CounterOne';
+import CounterTwo from './components/useReducer/CounterTwo';
+import CounterThree from './components/useReducer/CounterThree';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+  return(
+    <div>
+      <FetchOne />
+      <hr/>
+      <FetchTwo />
+      <hr/>
+      <FetchClick/>
+      <hr/>
+      <FetchChange />
+      <hr/>
+      <CounterOne />
+      <hr/>
+      <CounterTwo />
+      <hr/>
+      <CounterThree />
     </div>
-  );
+  )
 }
 
 export default App;
