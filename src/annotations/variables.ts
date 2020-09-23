@@ -28,7 +28,7 @@ class Car {
 
 }
 
-let car: Car = new Car();
+let newCar: Car = new Car();
 
 //Object Literal
 let point: { x: number; y: number; }= {
@@ -53,7 +53,6 @@ let oranges = 5;
 
 //When to use annotations
 
-//-When we want a variable to  have a type that can't be inferred
 //-When a funciton returns the 'any' type and we need to clarify the value
 const json = '{"x": 10, "y": 20}';
 const coordinates = JSON.parse(json);
@@ -62,4 +61,12 @@ console.log(coordinates);
 
 //-When we declare a variable on one line then initialize it later
 let words = ['red', 'green', 'blue'];
-let foundWord;
+let foundWord: boolean;
+
+for (let i = 0; i < words.length; i++){
+    if(words[i] === 'green'){
+        foundWord = true;
+    }
+}
+
+//-When we want a variable to  have a type that can't be inferred
